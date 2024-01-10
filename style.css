@@ -319,35 +319,41 @@ header {
 .newsletter-section form {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 90%;
   margin-bottom: 9.375rem;
 }
 
 .newsletter-section form input[type='email'] {
   font-size: 1.5rem;
   color: var(--color-gray-dark);
-  padding: 1rem 0;
+  padding: 1.5rem 0;
   text-align: center;
   border: 0.5px solid white;
   border-radius: 5px;
   box-shadow: 0 0 15px 10px hsla(0, 0%, 87%, 0.2);
   margin: 0 auto 1.875rem auto;
   font-family: Arial, Helvetica, sans-serif;
-  width: 70%;
+  width: 80%;
   transition: 1s;
+  cursor: pointer;
 }
 
 .newsletter-section form input[type='email']::placeholder {
   font-size: 1.5rem;
   color: var(--color-gray-dark);
   font-family: Arial, Helvetica, sans-serif;
+  transition: 2s;
 }
 
 .newsletter-section form input[type='email']:focus {
   border: 1px solid var(--color-pink);
-  padding: 1.4rem 0;
+  padding: 2rem 0;
   outline: none;
-  width: 85%;
+  width: 100%;
+}
+
+.newsletter-section form input[type='email']:focus::placeholder {
+  opacity: 0.1;
 }
 
 .newsletter-section form input[type='submit'] {
@@ -356,11 +362,12 @@ header {
   color: white;
   width: 30%;
   margin: 0 auto;
-  padding: 1rem 0;
+  padding: 1.2rem 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.2rem;
   border-radius: 5px;
   outline: none;
+  cursor: pointer;
 }
 
 .newsletter-section form input[type='submit']:hover,
