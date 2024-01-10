@@ -27,6 +27,17 @@
   font-weight: 300;
 }
 
+@keyframes flyingWoman {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
 :root {
   --color-black: hsla(0, 0%, 0%, 1);
   --color-black-lighter: hsl1(235, 35%, 7%, 1);
@@ -92,6 +103,15 @@ header {
   background-size: 50vw;
   padding-top: 2.375rem;
   padding-left: 6vw;
+  position: relative;
+}
+
+header > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  animation: flyingWoman 2s infinite;
 }
 
 .header-logo {
@@ -113,6 +133,12 @@ header {
   padding-left: 3.375rem;
   max-width: 35vw;
   margin-bottom: 9.375rem;
+}
+
+@media only screen and (min-width: 1800px) {
+  .header-content {
+    padding-bottom: 6.25rem;
+  }
 }
 
 .header-content p:nth-of-type(1) {
