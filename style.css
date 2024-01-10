@@ -41,6 +41,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
 }
@@ -122,7 +126,7 @@ header {
   width: 28px;
 }
 
-.header-content p:nth-of-type(2) {
+.header-content a {
   text-transform: uppercase;
   font-size: 14px;
   color: var(--color-pink);
