@@ -27,6 +27,12 @@
   font-weight: 300;
 }
 
+:root {
+  --color-black: hsla(0, 0%, 0%, 1);
+  --color-black-lighter: hsl1(235, 35%, 7%, 1);
+  --color-pink: hsla(342, 100%, 60%, 1);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -35,4 +41,89 @@
 
 img {
   max-width: 100%;
+}
+
+/* ! Basic Styles */
+
+.wrapper {
+  min-height: 100vh;
+  color: var(--color-black);
+}
+
+h1,
+h2,
+h3 {
+  font-family: Roboto-SemiBold;
+}
+
+h1 {
+  font-size: 3.375rem;
+  margin-bottom: 1.125rem;
+  color: var(--color-black-lighter);
+}
+
+h2 {
+  font-size: 2.375rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-family: Roboto-Bold;
+  font-size: 1.17rem;
+}
+
+/* ! Header */
+
+header {
+  background: url(./assets/images/ilustracion1.png) no-repeat top right;
+  background-size: 50vw;
+  padding-top: 2.375rem;
+  padding-left: 5.625rem;
+}
+
+.header-logo {
+  margin-bottom: 21.875rem;
+  color: var(--color-black-lighter);
+}
+
+.header-logo p:nth-of-type(1) {
+  font-family: Roboto-SemiBold;
+  font-size: 1.5rem;
+}
+
+.header-logo p:nth-of-type(2) {
+  font-family: Roboto-Regular;
+  font-size: 0.75rem;
+}
+
+.header-content {
+  padding-left: 3.375rem;
+  max-width: 35vw;
+  margin-bottom: 9.375rem;
+}
+
+.header-content p:nth-of-type(1) {
+  font-size: 1.125rem;
+  font-family: Roboto-Light;
+  line-height: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+/* # Folgendes Image ist nicht sichtbar */
+
+.header-content p:nth-of-type(1)::after {
+  width: 32px;
+  height: 28px;
+  background: url(./assets/images/rocket.png) no-repeat center;
+  background-size: cover;
+}
+
+.header-content p:nth-of-type(2) {
+  text-transform: uppercase;
+  font-size: 14px;
+  color: var(--color-pink);
+  font-family: Roboto-Bold;
 }
