@@ -112,13 +112,8 @@ header {
   margin-bottom: 3.5rem;
 }
 
-/* # Folgendes Image ist nicht sichtbar */
-
-.header-content p:nth-of-type(1)::after {
-  width: 32px;
-  height: 28px;
-  background: url(./assets/images/rocket.png) no-repeat center;
-  background-size: cover;
+.header-content p:nth-of-type(1) img {
+  width: 28px;
 }
 
 .header-content p:nth-of-type(2) {
