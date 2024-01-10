@@ -75,13 +75,17 @@ h4 {
   font-size: 1.17rem;
 }
 
+p {
+  font-family: Roboto-Light;
+}
+
 /* ! Header */
 
 header {
   background: url(./assets/images/ilustracion1.png) no-repeat top right;
   background-size: 50vw;
   padding-top: 2.375rem;
-  padding-left: 5.625rem;
+  padding-left: 6vw;
 }
 
 .header-logo {
@@ -127,4 +131,38 @@ header {
 
 .hero-section {
   margin-bottom: 15.875rem;
+}
+
+/* ! Idea Section */
+
+.idea-section {
+  padding-left: 10vw;
+  padding-right: 20vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12rem;
+}
+
+.idea-section div {
+  display: flex;
+  gap: 4vw;
+  margin-bottom: 6.875rem;
+}
+
+.idea-section div h2 {
+  width: 20vw;
+}
+
+.idea-section div h2 img {
+  width: 60px;
+}
+
+.idea-section div p {
+  width: 42vw;
+  font-size: 1.125rem;
+  line-height: 2.25rem;
+}
+
+.idea-section > h2 {
+  padding-left: 3.75rem;
 }
