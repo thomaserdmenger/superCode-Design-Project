@@ -31,6 +31,7 @@
   --color-black: hsla(0, 0%, 0%, 1);
   --color-black-lighter: hsl1(235, 35%, 7%, 1);
   --color-pink: hsla(342, 100%, 60%, 1);
+  --color-gray: hsla(0, 0%, 87%, 1);
 }
 
 * {
@@ -217,4 +218,78 @@ header {
 
 .letsgo-section p {
   font-size: 14px;
+}
+
+/* ! Steps Section */
+
+.steps-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.steps-section article {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 9.375rem;
+}
+
+.steps-section article div {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin-bottom: 6.875rem;
+}
+
+.steps-section article div p:nth-of-type(1) {
+  font-family: Roboto-Bold;
+  color: var(--color-gray);
+  font-size: 3.25rem;
+  margin-bottom: 2.8125rem;
+}
+
+.steps-section article div img {
+  width: 45px;
+  margin-bottom: 1.375rem;
+}
+
+.steps-section article div h4 {
+  margin-bottom: 1.25rem;
+}
+
+.steps-section article div p:nth-of-type(2) {
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+}
+
+/* ? Step 1 */
+
+.steps-section article:nth-of-type(1) {
+  background: url(./assets/images/step01.png) no-repeat left;
+  background-size: contain;
+}
+
+/* ? Step 2 */
+
+.steps-section article:nth-of-type(2) {
+  background: url(./assets/images/step02.png) no-repeat right;
+  background-size: contain;
+  flex-direction: row-reverse;
+}
+
+/* ? Step 3 */
+
+.steps-section article:nth-of-type(3) {
+  background: url(./assets/images/step03.png) no-repeat left;
+  background-size: contain;
+}
+
+/* ? Step 4 */
+
+.steps-section article:nth-of-type(4) {
+  background: url(./assets/images/step04.png) no-repeat right;
+  background-size: contain;
+  flex-direction: row-reverse;
+  margin-bottom: 12.5rem;
 }
