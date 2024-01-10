@@ -367,3 +367,21 @@ header {
 .newsletter-section form input[type='submit']:focus {
   background: linear-gradient(to right, var(--color-pink), purple);
 }
+
+/* ! Footer */
+
+footer {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+  margin-left: 7vw;
+}
+
+footer p {
+  font-size: 18px;
+}
+
+footer img {
+  width: 28px;
+  margin-left: 0.9rem;
+}
