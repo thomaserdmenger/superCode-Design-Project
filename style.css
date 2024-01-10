@@ -127,3 +127,9 @@ header {
   color: var(--color-pink);
   font-family: Roboto-Bold;
 }
+
+/* ! Hero Section */
+
+.hero-section {
+  margin-bottom: 15.875rem;
+}
